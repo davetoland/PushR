@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32FCF357-E76E-4947-AE1B-4F12548ECBA0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PushR</RootNamespace>
+    <AssemblyName>PushR</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>..\..\..\..\..\Users\Dave\Documents\Visual Studio 2012\Projects\PushR\packages\Microsoft.AspNet.SignalR.Core.1.0.0-rc2\lib\net40\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Owin">
+      <HintPath>..\..\..\..\..\Users\Dave\Documents\Visual Studio 2012\Projects\PushR\packages\Microsoft.AspNet.SignalR.Owin.1.0.0-rc2\lib\net45\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb">
+      <HintPath>..\..\..\..\..\Users\Dave\Documents\Visual Studio 2012\Projects\PushR\packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.0-rc2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\..\..\..\..\Users\Dave\Documents\Visual Studio 2012\Projects\PushR\packages\Microsoft.Owin.Host.SystemWeb.1.0.0-rc2\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\Users\Dave\Documents\Visual Studio 2012\Projects\PushR\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\..\..\..\..\Users\Dave\Documents\Visual Studio 2012\Projects\PushR\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="Bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <None Include="packages\jQuery.1.6.4\Content\Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="packages\jQuery.1.6.4\Content\Scripts\jquery-1.6.4.js" />
+    <Content Include="packages\jQuery.1.6.4\Content\Scripts\jquery-1.6.4.min.js" />
+    <Content Include="packages\jQuery.1.6.4\Tools\jquery-1.6.4-vsdoc-para.js" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.1.0.0-rc2\readme.txt" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Core.1.0.0-rc2\lib\net40\Microsoft.AspNet.SignalR.Core.dll" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Core.1.0.0-rc2\lib\net40\Microsoft.AspNet.SignalR.Core.xml" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.JS.1.0.0-rc2\content\Scripts\jquery.signalR-1.0.0-rc2.js" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.JS.1.0.0-rc2\content\Scripts\jquery.signalR-1.0.0-rc2.min.js" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Owin.1.0.0-rc2\lib\net40\Microsoft.AspNet.SignalR.Owin.dll" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Owin.1.0.0-rc2\lib\net40\Microsoft.AspNet.SignalR.Owin.xml" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Owin.1.0.0-rc2\lib\net45\Microsoft.AspNet.SignalR.Owin.dll" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Owin.1.0.0-rc2\lib\net45\Microsoft.AspNet.SignalR.Owin.xml" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.0-rc2\lib\net40\Microsoft.AspNet.SignalR.SystemWeb.dll" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.0-rc2\lib\net40\Microsoft.AspNet.SignalR.SystemWeb.xml" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.0-rc2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.0-rc2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.xml" />
+    <Content Include="packages\Microsoft.Owin.Host.SystemWeb.1.0.0-rc2\lib\net40\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="packages\Microsoft.Owin.Host.SystemWeb.1.0.0-rc2\lib\net40\Microsoft.Owin.Host.SystemWeb.xml" />
+    <Content Include="packages\Microsoft.Owin.Host.SystemWeb.1.0.0-rc2\lib\net45\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="packages\Microsoft.Owin.Host.SystemWeb.1.0.0-rc2\lib\net45\Microsoft.Owin.Host.SystemWeb.xml" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\sl3-wp\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\sl3-wp\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\sl4-windowsphone71\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\sl4-windowsphone71\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\sl4\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\sl4\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\winrt45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\lib\winrt45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Owin.1.0\lib\net40\Owin.dll" />
+    <Content Include="Pages\Default.aspx" />
+    <Content Include="Styles\default.css" />
+    <Content Include="Pages\Requests.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Push\Service\DataService.svc" />
+    <Content Include="packages.config" />
+    <Content Include="Masters\Default.Master" />
+    <Content Include="packages\jQuery.1.6.4\jQuery.1.6.4.nupkg" />
+    <Content Include="packages\jQuery.1.6.4\jQuery.1.6.4.nuspec" />
+    <Content Include="packages\jQuery.1.6.4\Tools\install.ps1" />
+    <Content Include="packages\jQuery.1.6.4\Tools\uninstall.ps1" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.1.0.0-rc2\Microsoft.AspNet.SignalR.1.0.0-rc2.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.1.0.0-rc2\Microsoft.AspNet.SignalR.1.0.0-rc2.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Core.1.0.0-rc2\Microsoft.AspNet.SignalR.Core.1.0.0-rc2.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Core.1.0.0-rc2\Microsoft.AspNet.SignalR.Core.1.0.0-rc2.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.JS.1.0.0-rc2\Microsoft.AspNet.SignalR.JS.1.0.0-rc2.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.JS.1.0.0-rc2\Microsoft.AspNet.SignalR.JS.1.0.0-rc2.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Owin.1.0.0-rc2\Microsoft.AspNet.SignalR.Owin.1.0.0-rc2.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Owin.1.0.0-rc2\Microsoft.AspNet.SignalR.Owin.1.0.0-rc2.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.0-rc2\Microsoft.AspNet.SignalR.SystemWeb.1.0.0-rc2.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.0-rc2\Microsoft.AspNet.SignalR.SystemWeb.1.0.0-rc2.nuspec" />
+    <Content Include="packages\Microsoft.Owin.Host.SystemWeb.1.0.0-rc2\Microsoft.Owin.Host.SystemWeb.1.0.0-rc2.nupkg" />
+    <Content Include="packages\Microsoft.Owin.Host.SystemWeb.1.0.0-rc2\Microsoft.Owin.Host.SystemWeb.1.0.0-rc2.nuspec" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nuspec" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\Newtonsoft.Json.4.5.11.nupkg" />
+    <Content Include="packages\Newtonsoft.Json.4.5.11\Newtonsoft.Json.4.5.11.nuspec" />
+    <Content Include="packages\Owin.1.0\Owin.1.0.nupkg" />
+    <Content Include="packages\Owin.1.0\Owin.1.0.nuspec" />
+    <Content Include="packages\repositories.config" />
+    <None Include="Properties\PublishProfiles\Default.pubxml" />
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery-animate-colour.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0-rc2.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0-rc2.min.js" />
+    <Content Include="Pages\TradeBook.aspx" />
+    <Content Include="Scripts\requests.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\Quote.cs" />
+    <Compile Include="Masters\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Push\Group.cs" />
+    <Compile Include="Push\GroupMapper.cs" />
+    <Compile Include="Pages\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Push\GroupManager.cs" />
+    <Compile Include="Pages\Requests.aspx.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Requests.aspx.designer.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Push\SecurityManager.cs" />
+    <Compile Include="Push\Service\IDataService.cs" />
+    <Compile Include="Push\Service\DataService.svc.cs">
+      <DependentUpon>DataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Push\PushData.cs" />
+    <Compile Include="Push\PushEngine.cs" />
+    <Compile Include="Push\PushHub.cs" />
+    <Compile Include="Pages\TradeBook.aspx.cs">
+      <DependentUpon>TradeBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TradeBook.aspx.designer.cs">
+      <DependentUpon>TradeBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Push\User.cs" />
+    <Compile Include="Push\UserManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.9.1-min" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50717/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

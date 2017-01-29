@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PushR.Push.Service.DataService" CodeBehind="DataService.svc.cs" %>

@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushR", "PushR\PushR.csproj", "{32FCF357-E76E-4947-AE1B-4F12548ECBA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockDb", "MockDb\MockDb.csproj", "{16EB7736-19EB-4CED-A0CF-42B767305A84}"
+	ProjectSection(ProjectDependencies) = postProject
+		{32FCF357-E76E-4947-AE1B-4F12548ECBA0} = {32FCF357-E76E-4947-AE1B-4F12548ECBA0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tolanaa1.miniserver.com:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MockDb\\MockDb.csproj
+		SccProjectName1 = MockDb
+		SccLocalPath1 = MockDb
+		SccProjectUniqueName2 = PushR\\PushR.csproj
+		SccProjectName2 = PushR
+		SccLocalPath2 = PushR
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32FCF357-E76E-4947-AE1B-4F12548ECBA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32FCF357-E76E-4947-AE1B-4F12548ECBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32FCF357-E76E-4947-AE1B-4F12548ECBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32FCF357-E76E-4947-AE1B-4F12548ECBA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16EB7736-19EB-4CED-A0CF-42B767305A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16EB7736-19EB-4CED-A0CF-42B767305A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16EB7736-19EB-4CED-A0CF-42B767305A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16EB7736-19EB-4CED-A0CF-42B767305A84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

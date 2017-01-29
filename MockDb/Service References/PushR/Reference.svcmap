@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0810e446-b559-4c6a-a86b-c9f21a5357f2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50717/Push/Service/DataService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DataService.xsd" MetadataType="Schema" ID="9458ea1c-f480-4238-b8ef-b23668168f33" SourceId="1" SourceUrl="http://localhost:50717/Push/Service/DataService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DataService1.xsd" MetadataType="Schema" ID="6a5d78e5-f5a6-4875-b341-2ba1fcd6afcf" SourceId="1" SourceUrl="http://localhost:50717/Push/Service/DataService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DataService2.xsd" MetadataType="Schema" ID="c1494777-2b93-4d0b-b4c9-4197c9eccf06" SourceId="1" SourceUrl="http://localhost:50717/Push/Service/DataService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DataService.disco" MetadataType="Disco" ID="b21c6f7c-be0e-4622-85e5-f13e726ea4d9" SourceId="1" SourceUrl="http://localhost:50717/Push/Service/DataService.svc?disco" />
+    <MetadataFile FileName="DataService.wsdl" MetadataType="Wsdl" ID="f89042f0-caa5-4841-8eb8-6e156588361e" SourceId="1" SourceUrl="http://localhost:50717/Push/Service/DataService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

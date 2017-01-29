@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="PushR.Masters.Default" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <title>PushR</title>
+        <!-- Styles -->
+        <link href="/Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/Bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+        <link href="/Styles/default.css" rel="stylesheet" />
+        
+        <!-- Scripts -->
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+        <script src="/Scripts/jquery.signalR-1.0.0-rc2.js"></script>
+        <script src="/Bootstrap/js/bootstrap.min.js"></script>
+        <!-- SignalR -->
+        <script src="/signalr/hubs"></script>
+        <!-- Security -->
+        <script type="text/javascript">
+            var token = "<%=PushR.Push.SecurityManager.Instance.Encrypt("abc123")%>";
+        </script>
+    </head>
+    <body>
+        <form id="mainForm" runat="server">
+            <div>            
+                <!-- Content -->
+                <asp:ContentPlaceHolder ID="contentBody" runat="server" />
+            </div>
+        </form>
+    </body>
+</html>
